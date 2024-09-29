@@ -1,0 +1,38 @@
+.slider {
+  margin: auto;
+  margin-top: 10%;
+  width: 800px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slider-img.active {
+  opacity: 1;
+}
+
+.controlls{
+  opacity: 1; 
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
